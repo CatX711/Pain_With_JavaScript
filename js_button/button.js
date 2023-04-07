@@ -4,11 +4,11 @@ let isDarkMode = false; // false is the default value (means that the website is
 button.addEventListener('click', () => {    // when button clicked
   if (!isDarkMode) { // if darkmode is false
     document.body.style.backgroundColor = '#222'; // change colour to colour of choosing (in this case dark gray)
-    document.body.style.color = "#fff"  // changes colour to white so it is visible in black background
+    document.body.style.color = "#fff"  // changes text colour to white so it is visible in black background
     isDarkMode = true; // set darkmode to true
   } else {  // else if darkmode is true
     document.body.style.backgroundColor = '#fff'; // change colour back to white
-    document.body.style.color = "#000" // changes colour to black so it is visible in white background
+    document.body.style.color = "#000" // changes text colour to black so it is visible in white background
     isDarkMode = false; // set darkmode to false
   }
 });
