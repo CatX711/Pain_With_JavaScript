@@ -9,6 +9,6 @@ button.addEventListener('click', () => {    // when button clicked
   } else {  // else if darkmode is true
     document.body.style.backgroundColor = '#fff'; // change colour back to white
     document.body.style.color = "#000" // changes text colour to black so it is visible in white background
-    isDarkMode = false; // set darkmode to false
+    isDarkMode = false; // set darkmode to false 
   }
 });
