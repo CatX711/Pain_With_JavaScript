@@ -1,5 +1,5 @@
 
-# NOTES: 
+# 📝 NOTES: 
 
 *Tutorial: <a href="https://www.youtube.com/watch?v=hdI2bqOjy3c">Click Here</a>*
 <br />
@@ -19,7 +19,7 @@
 Creating your `first lines of code.` 
 <br />
 
-(Displaying text on the screen, creating popups/alerts, plus error and warning messages.)
+*(Displaying text on the screen, creating popups/alerts, plus error and warning messages.)*
 
 ```js
 alert("Hello, World!"); // alert creates a popup with a message 
@@ -31,7 +31,7 @@ console.warn("This is a warning"); // creates a warning
 
 ## REMEMBER:
 
-**Use these: let, const** 
+**Use these: let, const to create variables** 
 
 *Let: lets you change the value of a variable if wanted*
 
@@ -87,6 +87,7 @@ So, note this:
 
 
 * In a game to alter score
+* Etc.
 
 ```js
 let score = 0; <- initializes the variable
@@ -98,6 +99,8 @@ console.log(score);
 
 <br />
 <br />
+
+****
 
 ## Data types:
 
@@ -211,6 +214,8 @@ The reason this happens is: When Javascript was created, an object had the value
 ```js
 const name = "John";
 const age = 30;
+
+// I forgot to fill in the rest lmao
 ```
 
 ### Concatenation
@@ -238,7 +243,6 @@ console.log(hello);
 <br />
 <br />
 
-*
 
 ## How to print the amount of letters in a variable
 
@@ -284,7 +288,7 @@ console.log(s.toLowerCase);
 hello world
 ```
 
-*
+****
 
 ## Substrings
 
@@ -304,6 +308,8 @@ OUTPUT:
 Hello_  
 
 (_ is the space but space isnt visible so i put it there for visibility) 
+
+<br />
 
 ### E.G 2
 
@@ -336,9 +342,9 @@ HELL
 
 *Ugh, kinda creepy!*
 
-*
+****
 
-// Arrays -- variables that hold multiple values
+## Arrays -- variables that hold multiple values
 
 reffer to tutorial at 22:50 for this cuz i cant explain it but its some arrays crap
 
