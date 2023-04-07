@@ -722,7 +722,7 @@ OUTPUT:
 10
 -->
 
-# Look at "code" for notes. Thank you and enjoy reading my pain...
+# Look at "code" for notes. Thank you and enjoy reading my near 1000 line note file...
 
 
 
