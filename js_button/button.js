@@ -1,5 +1,5 @@
 const button = document.getElementById('change-color-button'); // connects to button using it's id
-let isDarkMode = false; // false is default value (means that the website is white)
+let isDarkMode = false; // false is the default value (means that the website is white)
 
 button.addEventListener('click', () => {    // when button clicked
   if (!isDarkMode) { // if darkmode is false
