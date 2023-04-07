@@ -64,7 +64,7 @@ age = 31;
 console.log(age);
 ```
 
-OUTPUT:
+**OUTPUT:**
 
 ```shell
 Uncaught TypeError: invalid assignment to const 'age'
@@ -81,6 +81,7 @@ So, note this:
 
 **Always use const unless you know you're going to change the value**
 
+<br />
 
 ### Example of when you would use let:
 
@@ -210,7 +211,13 @@ The reason this happens is: When Javascript was created, an object had the value
 ```js
 const name = "John";
 const age = 30;
+```
 
+### Concatenation
+<br />
+
+
+```js
 // Concatenation
 
 console.log("My name is " + name + " and I am " + age + "!") 
@@ -224,45 +231,73 @@ console.log(`My name is ${name} and I am ${age}`) // new and easier way of conca
 const hello = (`My name is ${name} and I am ${age}`)
 
 console.log(hello);
-
 ```
 
->The above shows multiple different ways of putting in values into a string.
+>The above shows multiple different ways of putting in / linking values into a string.
 
+<br />
+<br />
+
+*
 
 ## How to print the amount of letters in a variable
 
+```js
 const s = "Hello World";
 
 console.log(s.length);
 
+```
 
-// How to change the case of the string to uppercase/lowercase
+**OUTPUT:**
 
-console.log(s.toUpperCase);
+```
+10
+```
+<br />
 
-OUTPUT:
+You may wonder, why is the output 10, when there are clearly 11 characters when you include the space mark?
+<br />
+Well, JavaScript uses an indexing system, where the first index is 0. It's odd, but there's no way to change it, so you have to live with it.
 
+*
+
+## How to change the case of the string to either fully uppercase or fully lowercase
+
+**OUTPUT:**
+
+```
 HELLO WORLD!
+```
 
-or
+Or if you wanted to, you could change the `toUpperCase` function, to one that makes the string lowercase.
+<br />
+<br />
 
+```js
 console.log(s.toLowerCase);
+```
 
-OUTPUT:
+**OUTPUT:**
 
+```
 hello world
+```
 
-// How to get a substring
+*
 
-select how many letters you want to take from a string 
-letter one is 0
+## Substrings
 
-E.G
+*Select how many letters you want to take from a string 
+letter one is 0*
 
+### E.G
+
+```js
 const s = "Hello world";
 
 console.log(s.substring(0, 5));
+```
 
 OUTPUT:
 
@@ -270,26 +305,38 @@ Hello_
 
 (_ is the space but space isnt visible so i put it there for visibility) 
 
-E.G 2
+### E.G 2
 
+```js
 const s = "Hello world";
 
 console.log(s.substring(0, 8));
 
-Hello Wor
+// OUTPUT:
+
+"Hello Wor"
+```
+
+*And you can also use the case changer code at the same time!*
 
 
-// And you can also use the case changer code at the same time
-
-
-
+```js
 const s = "Hello world";
 
 console.log(s.substring(0, 3).toUpperCase);
+```
 
-OUTPUT:
+**OUTPUT:**
 
+```
 HELL
+```
+
+<br />
+
+*Ugh, kinda creepy!*
+
+*
 
 // Arrays -- variables that hold multiple values
 
