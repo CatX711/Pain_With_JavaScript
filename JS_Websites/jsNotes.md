@@ -18,6 +18,7 @@
 
 Creating your `first lines of code.` 
 <br />
+
 (Displaying text on the screen, creating popups/alerts, plus error and warning messages.)
 
 ```js
@@ -51,6 +52,7 @@ console.log(age)
 
 <br />
 <br />
+
 *Const: short for constant- value never changes*
 
 ### E.G
@@ -69,6 +71,7 @@ Uncaught TypeError: invalid assignment to const 'age'
     <anonymous> file:///Users/username/master-folder/folder/filename:4
 ```
 <br />
+
 >This is an error. Const, is short for constant, which means that you cannot change it- the value stays the same throughout the whole program.
 So, note this:
 
@@ -199,6 +202,8 @@ object // <- error in javascript
 
 The reason this happens is: When Javascript was created, an object had the value of 0. No biggie. However, when Null was introduced, as it is literally nothing, it is automatically assigned a value of 0.
 
+<br />
+<br />
 
 ## TEST CODE
 
