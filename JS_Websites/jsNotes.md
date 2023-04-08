@@ -218,7 +218,7 @@ const age = 30;
 // I forgot to fill in the rest lmao
 ```
 
-### Concatenation
+## Concatenation
 <br />
 
 
@@ -346,6 +346,9 @@ HELL
 
 ## Arrays -- variables that hold multiple values
 
+If you would like to read this section, check the code, as I cannot really explain it that well. Thank you.
+
+<!--
 reffer to tutorial at 22:50 for this cuz i cant explain it but its some arrays crap
 
 but the code is 
@@ -502,10 +505,25 @@ you can also add values
 
 person.email = "johndoe@gmail.com"
 
+-->
 
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
 
-convert js code to json:
+****
 
+## Convert js code to json:
+
+*The code that we want to convert:*
+<br />
+
+```js
 const todos = [
 	{
 		id: 1,
@@ -525,60 +543,75 @@ const todos = [
 ];
 
 console.log(todos[1].text);
+```
 
-OUTPUT:
+**OUTPUT:**
 
-all of those values printed onto console
+```shell
+Take out trash
+Meeting with boss 
+Dentist appointment
+```
 
+Just normal code. Now we convert it into json:
 
-
-
+```js
 // converts code into json 
 
 const todoJSON = JSON.stringify(todos)
 console.log(todoJSON)
+```
 
+<br />
+<br />
 
-
-OUTPUT:
+**OUTPUT:**
 
 json code
 
+```json
 [{"id":1,"text":"Take out trash","iscompleted":true},{"id":2,"text":"Meeting with boss","iscompleted":true},{"id":3,"text":"Dentist appointment","iscompleted":false}]
-
+```
  
 
+****
 
+### For Loops
 
-// for loops
-
+```js
 for(let i = 0; i < 10; i++) {
 	console.log(i);
 } 
+```
 
-// what this does
+*What This Code Does:*
 
-it starts at 0, then prints i + 1 until it reaches 9, because we say it has to do this if i is smaller than 10, and if it adds 1 more it will be 10 so for some reason the language thinks it needs to stop at 9 lol.
+It starts at 0, then prints i + 1 until it reaches 9, because we say it has to do this if i is smaller than 10, and if it adds 1 more it will be 10 so for some reason the language thinks it needs to stop at 9 lol.
 
-if you want ten included, use the less than or equal sign
+>If you want ten included, use the less than or equal sign
 
 
+<br />
+<br />
 
+```js
 for(let i = 0; i <= 10; i++) {
 	console.log(i);
 } 
 
 
-ANOTHER WAY TO DO THIS:
+// ANOTHER WAY TO DO THIS:
 
 for(let i = 0; i < 10; i++) {
 	console.log(`For Loop Number: ${i}`);
 }
+```
+<br />
+<br />
 
+****
 
-
-
-// While loops
+## While loops
 
 let i = 0;
 while(i < 10) {
@@ -590,51 +623,56 @@ while(i < 10) {
 
 ALWAYS use i++, not i+
 
+<br />
+<br />
 
+**Here is some code that I just want to store here. I'm not going to explain it.**
 
-
-
-more crappy code lol:
+```js
+// more crappy code lol:
 
 for(let i = 0; i < todos.length; i++) {
 	console.log(todos[i].text);
 }
 
+/*
 OUTPUT:
 
 Take out trash
 Meeting with boss
 Dentist appointment
+*/
 
-
-or
+// or you can do
 
 
 for(let todo of todos) {
 	console.log(todo.id);
 }
 
+/*
 (code here is same as above, just more easy to read)
 
-// todo (located at ->todo<- of todos) could be anything, it just looks nice to say each thing printed is one todo of todos. it could be t, b, c, even yocaca, but todo sounds nice
+todo (located at ->todo<- of todos) could be anything, it just looks nice to say each thing printed is one todo of todos. it could be t, b, c, even yocaca, but todo sounds nice
+*/
 
 
-a few more variations of that:
+// stuff i cant explain that well:
 
 // forEach, map, filter
 
 
-foreach:
+// foreach:
 
 todos.forEach(function(todo) {
 	console.log(todo.text);
 });
 
-map:
+// map:
 
-same as above i think idk lmao
+// same as above i think idk lmao
 
-map also:
+// map also:
 
 const todoText = todos.map(function(todo) {
 	return todo.text;
@@ -642,10 +680,10 @@ const todoText = todos.map(function(todo) {
 
 console.log(todotext);
 
-does something different but i dont know how to explain it soooo... see time: 43:00-45:00 somewhere inbetween those two
+// does something different but i dont know how to explain it soooo... see time: 43:00-45:00 somewhere inbetween those two
 
 
-filter:
+// filter:
 
 const todoCompleted = todos.filter(function(todo) {
 	return todo.isCompleted === true;
@@ -655,11 +693,10 @@ console.log(todoCompleted)
 
 
 
-does something different but i dont know how to explain it soooo... see time: 45:00-46:00 somewhere inbetween those two
+// does something different but i dont know how to explain it soooo... see time: 45:00-46:00 somewhere inbetween those two
 
 
-one final goofy way:
-todo
+// one final goofy way:
 
 const todoCompleted = todos.filter(function(todo) {
 	return todo.isCompleted === true;
@@ -670,7 +707,7 @@ const todoCompleted = todos.filter(function(todo) {
 console.log(todoCompleted)
 
 
-at this point i dont even know what this does lmao
+// at this point i dont even know what this does lmao
 
 
 
@@ -729,10 +766,11 @@ const color = x > 10 ? "red" : "blue";
 
 : = else
 
-when you do console.log(color); 
-OUTPUT:
+// when you do console.log(color); 
 
-red
+// OUTPUT:
+
+// red
 
 
 
@@ -754,9 +792,9 @@ switch(color) {
 		break;		
 } 
 
-OUTPUT:
+// OUTPUT:
 
-color is NOT red or blue
+// color is NOT red or blue
 
 
 
@@ -777,7 +815,7 @@ addnums(5,4)
 
 
 
-however, if you make predefined values:
+// however, if you make predefined values:
 
 function addnums(num1 = 1, num2 = 3) {
 	console.log(num1 + num2);
@@ -850,10 +888,11 @@ const addnums = num1 => num1 + 5;
 console.log(addnums(5)); // sets num1 to 5
 
 
-OUTPUT:
+// OUTPUT:
 
 10
 
+```
 
 
 
