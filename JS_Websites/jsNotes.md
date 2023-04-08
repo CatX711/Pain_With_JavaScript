@@ -264,7 +264,7 @@ You may wonder, why is the output 10, when there are clearly 11 characters when 
 <br />
 Well, JavaScript uses an indexing system, where the first index is 0. It's odd, but there's no way to change it, so you have to live with it.
 
-*
+****
 
 ## How to change the case of the string to either fully uppercase or fully lowercase
 
