@@ -602,7 +602,7 @@ for(let i = 0; i <= 10; i++) {
 
 // ANOTHER WAY TO DO THIS:
 
-for(let i = 0; i < 10; i++) {
+for(let i = 0; i <= 10; i++) {
 	console.log(`For Loop Number: ${i}`);
 }
 ```
@@ -629,7 +629,7 @@ ALWAYS use i++, not i+
 **Here is some code that I just want to store here. I'm not going to explain it.**
 
 ```js
-// more crappy code lol:
+// more goofy code lol:
 
 for(let i = 0; i < todos.length; i++) {
 	console.log(todos[i].text);
@@ -894,7 +894,14 @@ console.log(addnums(5)); // sets num1 to 5
 
 ```
 
+<!--
+turn these notes into md when finished with tutorial
 
+
+
+
+
+-->	
 
 
 
