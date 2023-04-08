@@ -204,7 +204,7 @@ object // <- error in javascript
 
 ```
 
-The reason this happens is: When Javascript was created, an object had the value of 0. No biggie. However, when Null was introduced, as it is literally nothing, it is automatically assigned a value of 0.
+The reason this happens is: When Javascript was created, an object had the value of 0. No biggie. However, when Null was introduced, as it is literally nothing, it was and still is automatically assigned a value of 0.
 
 <br />
 <br />
